@@ -1,0 +1,153 @@
+//====================================================================================================
+.footer {
+  padding-top: 48px;
+  padding-bottom: 127px;
+  // .footer__container
+
+  &__container {
+    padding: 0 42px;
+  }
+
+  // .footer__text
+
+  &__text {
+    color: $mainColor;
+    margin-bottom: 29px;
+  }
+
+  // .footer__mail
+
+  &__mail:link {
+    margin-bottom: 42px;
+    display: inline-block;
+    font-size: 36px;
+    color: $mainColor;
+    font-family: ahellya;
+    font-weight: 300;
+    position: relative;
+    &::after {
+      content:'';
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      width: 100%;
+      border: 1px solid $mainColor;
+    }
+  }
+
+  // .footer__row
+  &__row {
+    margin-bottom: 125px;
+    padding-top: 42px;
+    opacity: 0.5;
+    font-weight: 300;
+    position: relative;
+    display: grid;
+    grid-template-areas: "contacts nav" "follow nav";
+    grid-template-columns: 1fr 1fr;
+    &::after {
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0.2;
+      border-top: 0.5px solid #FFFAE7;
+    }
+  }
+
+  // .footer__contacts
+
+  &__contacts {
+    font-family: ahellya;
+    grid-area: contacts;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 45px;
+  }
+
+  // .footer__contacts-mail
+  &__contacts-mail {
+  }
+
+  // .footer__contacts-tel
+
+  &__contacts-tel:link {
+    text-decoration: underline;
+  }
+
+  // .footer__nav
+
+  &__nav {
+    grid-area: nav;
+    padding: 0 16px;
+    justify-self: flex-end;
+
+  }
+
+  // .footer__follow
+  &__follow {
+    grid-area: follow;
+  }
+
+  &__copy,
+  &__year {
+    opacity: 0.5;
+    text-align: center;
+  }
+  // .footer__copy
+  &__copy {
+    margin-bottom: 8px;
+  }
+
+  // .footer__year
+  &__year {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
+
+.nav-footer {
+
+  // .nav-footer__list
+  &__list {
+    display: inline-flex;
+    flex-direction: column;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 33px;
+      }
+    }
+  }
+
+  // .nav-footer__link
+  &__link {
+    font-size: 14px;
+  }
+
+}
+.follow-footer {
+
+  // .follow-footer__title
+
+  &__title {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  // .follow-footer__row
+  &__row {
+    display: flex;
+  }
+
+  // .follow-footer__link
+  &__link {
+    flex: 0 0 45px;
+    height: 45px;
+    border: 1px solid #ffffff;
+  }
+}
+
+//====================================================================================================

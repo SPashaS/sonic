@@ -1,0 +1,43 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	padding: 0px 0px;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	text-align: center;
+	// .button_circle
+	&_circle {
+		border-radius: 50%;
+		border: 1px solid #FFFFFF;
+		width: 130px;
+		height: 130px;
+		padding: 25px;
+		font-size: 13px;
+		font-weight: 300;
+		@media (min-width:$tablet) {
+			width: 254.3px;
+			height: 254.3px;
+			font-size: 25.6608px;
+			line-height: 35px;
+			padding: 50px; 
+		}
+		@media (min-width:$pc){
+			width: 193px;
+			height: 193px;
+			font-size: 19.4684px;
+			line-height: 27px;
+			padding: 35px; 
+		}
+	}
+	@media (any-hover: hover) {
+		&:hover {
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+	
+}
