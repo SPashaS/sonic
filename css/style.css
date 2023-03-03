@@ -1045,7 +1045,7 @@ h6 {
 }
 @media (min-width: 107em) {
   .page__article::after {
-    top: 852px;
+    top: 781px;
     height: 934.8px;
   }
 }
@@ -2310,10 +2310,10 @@ h6 {
   display: none !important;
 }
 
-.swiper-slide {
+.page__article .swiper-slide {
   visibility: hidden;
 }
 
-.swiper-slide-visible {
+.page__article .swiper-slide-visible {
   visibility: visible;
 }
