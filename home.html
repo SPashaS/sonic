@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-	<title>Главная</title>
+	<title>Home page</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230302225749">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230303194119">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,14 +28,14 @@
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#" class="menu__link">About us</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Services</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Why us?</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto="#description">About us</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto="#services">Services</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto="#special">Why us?</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto="#projects">Portfolio</a></li>
 							</ul>
 						</nav>
 					</div>
-					<a href="#" class="header__button button">contact</a>
+					<a href="#" class="header__button button" data-goto="#footer">contact</a>
 				</div>
 			</div>
 		</header>
@@ -46,7 +46,7 @@
 						<h1 class="main-page__title title ffa">
 							We create digital<br>masterpieces
 						</h1>
-						<a href="#" class="main-page__button button button_circle">schedule a call</a>
+						<a href="#" class="main-page__button button button_circle" data-goto="#connection">schedule a call</a>
 						<p class="main-page__info">
 							Our coding-kitchen will make the maximum of your ideas
 							to help you become the top-dog on the market.
@@ -54,7 +54,7 @@
 					</div>
 
 				</div>
-				<section class="page__description description">
+				<section id="description" class="page__description description">
 					<div class="description__container">
 						<h2 class="description__title title ffa">
 							when design & delicacy collaborate
@@ -83,7 +83,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="page__services services">
+				<section id="services" class="page__services services">
 					<div class="services__container">
 						<div class="services__header">
 							<p class="services__description">
@@ -151,10 +151,10 @@
 								</p>
 							</li>
 						</ul>
-						<a href="#" class="services__button button button_circle">schedule a call</a>
+						<a href="#" class="services__button button button_circle" data-goto="#connection">schedule a call</a>
 					</div>
 				</section>
-				<section class="page__projects projects">
+				<section id="projects" class="page__projects projects">
 					<div class="projects__container">
 						<h2 class="projects__title title ffa">
 							projects we created
@@ -162,71 +162,92 @@
 						<div class="projects__slider">
 							<div class="projects__swiper">
 								<div class="projects__slide slide-projects">
-									<picture><source srcset="img/slider/1.webp" type="image/webp"><img class="slide-projects__image" src="img/slider/1.jpg" alt="Slide"></picture>
+									<div class="slide-projects__image">
+										<picture><source srcset="img/slider/1.webp" type="image/webp"><img src="img/slider/1.jpg" alt="Slide"></picture>
+									</div>
 									<div class="slide-projects__content">
-										<h3 class="slide-projects__title title ffa">VPN Proxy Shield Proxy Servers</h3>
-										<p class="slide-projects__text">
-											With our advanced encryption along with fast proxy servers, we have created one
-											of the best VPN and Wi-Fi proxy security.
-										</p>
-										<a href="#" class="slide-projects__more">MORE</a>
+										<div class="slide-projects__content-inner">
+											<h3 class="slide-projects__title title ffa">VPN Proxy Shield Proxy Servers</h3>
+											<p class="slide-projects__text">
+												With our advanced encryption along with fast proxy servers, we have created one
+												of the best VPN and Wi-Fi proxy security.
+											</p>
+											<a href="#1" class="slide-projects__more">MORE</a>
+										</div>
 									</div>
 								</div>
 								<div class="projects__slide slide-projects">
-									<picture><source srcset="img/slider/2.webp" type="image/webp"><img class="slide-projects__image" src="img/slider/2.jpg" alt="Slide"></picture>
+									<div class="slide-projects__image">
+										<picture><source srcset="img/slider/2.webp" type="image/webp"><img src="img/slider/2.jpg" alt="Slide"></picture>
+									</div>
 									<div class="slide-projects__content">
-										<h3 class="slide-projects__title title ffa">#2</h3>
-										<p class="slide-projects__text">
-											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nobis nam porro ut maxime sed?
-										</p>
-										<a href="#" class="slide-projects__more">MORE</a>
+										<div class="slide-projects__content-inner">
+											<h3 class="slide-projects__title title ffa">#2</h3>
+											<p class="slide-projects__text">
+												Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nobis nam porro ut maxime sed?
+											</p>
+											<a href="#2" class="slide-projects__more">MORE</a>
+										</div>
 									</div>
 								</div>
 								<div class="projects__slide slide-projects">
-									<picture><source srcset="img/slider/3.webp" type="image/webp"><img class="slide-projects__image" src="img/slider/3.jpg" alt="Slide"></picture>
+									<div class="slide-projects__image">
+										<picture><source srcset="img/slider/3.webp" type="image/webp"><img src="img/slider/3.jpg" alt="Slide"></picture>
+									</div>
 									<div class="slide-projects__content">
-										<h3 class="slide-projects__title title ffa">#3</h3>
-										<p class="slide-projects__text">
-											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quaerat, corporis totam dicta culpa doloremque architecto unde perspiciatis similique blanditiis?
-										</p>
-										<a href="#" class="slide-projects__more">MORE</a>
+										<div class="slide-projects__content-inner">
+											<h3 class="slide-projects__title title ffa">#3</h3>
+											<p class="slide-projects__text">
+												Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quaerat, corporis totam dicta culpa doloremque architecto unde perspiciatis similique blanditiis?
+											</p>
+											<a href="#3" class="slide-projects__more">MORE</a>
+										</div>
 									</div>
 								</div>
 								<div class="projects__slide slide-projects">
-									<picture><source srcset="img/slider/4.webp" type="image/webp"><img class="slide-projects__image" src="img/slider/4.jpg" alt="Slide"></picture>
+									<div class="slide-projects__image">
+										<picture><source srcset="img/slider/4.webp" type="image/webp"><img src="img/slider/4.jpg" alt="Slide"></picture>
+									</div>
 									<div class="slide-projects__content">
-										<h3 class="slide-projects__title title ffa">#4</h3>
-										<p class="slide-projects__text">
-											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quaerat, corporis totam dicta culpa doloremque architecto unde perspiciatis similique blanditiis?
-											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quaerat, corporis totam dicta culpa doloremque architecto unde perspiciatis similique blanditiis?
-										</p>
-										<a href="#" class="slide-projects__more">MORE</a>
+										<div class="slide-projects__content-inner">
+											<h3 class="slide-projects__title title ffa">#4</h3>
+											<p class="slide-projects__text">
+												Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quaerat, corporis totam dicta culpa doloremque architecto unde perspiciatis similique blanditiis?
+												Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quaerat, corporis totam dicta culpa doloremque architecto unde perspiciatis similique blanditiis?
+											</p>
+											<a href="#4" class="slide-projects__more">MORE</a>
+										</div>
 									</div>
 								</div>
 								<div class="projects__slide slide-projects">
-									<picture><source srcset="img/slider/5.webp" type="image/webp"><img class="slide-projects__image" src="img/slider/5.jpg" alt="Slide"></picture>
+									<div class="slide-projects__image">
+										<picture><source srcset="img/slider/5.webp" type="image/webp"><img src="img/slider/5.jpg" alt="Slide"></picture>
+									</div>
 									<div class="slide-projects__content">
-										<h3 class="slide-projects__title title ffa">#5</h3>
-										<p class="slide-projects__text">
-											Lorem ipsum, dolor sit amet consectetur m
-										</p>
-										<a href="#" class="slide-projects__more">MORE</a>
+										<div class="slide-projects__content-inner">
+											<h3 class="slide-projects__title title ffa">#5</h3>
+											<p class="slide-projects__text">
+												Lorem ipsum, dolor sit amet consectetur m
+											</p>
+											<a href="#5" class="slide-projects__more">MORE</a>
+										</div>
 									</div>
 								</div>
 							</div>
+							<div class="projects__next _icon-arrow button"></div>
 						</div>
 					</div>
 				</section>
-				<section class="page__special special">
+				<section id="special" class="page__special special">
 					<div class="special__container">
-						<h2 class="special__title title">
+						<h2 class="special__title title ffa">
 							why we are special
 						</h2>
 						<ul class="special__list">
 							<li class="special__item item-special">
-								<div class="item-special__image _icon-focus"></div>
+								<div class="item-special__image item-special__image_1 _icon-focus"></div>
 								<div class="item-special__content">
-									<h5 class="item-special__title title">
+									<h5 class="item-special__title ffa">
 										focus on the results
 									</h5>
 									<p class="item-special__text">
@@ -236,9 +257,9 @@
 								</div>
 							</li>
 							<li class="special__item item-special">
-								<div class="item-special__image _icon-support"></div>
+								<div class="item-special__image item-special__image_2 _icon-support"></div>
 								<div class="item-special__content">
-									<h5 class="item-special__title title">
+									<h5 class="item-special__title ffa">
 										support
 									</h5>
 									<p class="item-special__text">
@@ -249,9 +270,9 @@
 								</div>
 							</li>
 							<li class="special__item item-special">
-								<div class="item-special__image _icon-from"></div>
+								<div class="item-special__image item-special__image_3 _icon-from"></div>
 								<div class="item-special__content">
-									<h5 class="item-special__title title">
+									<h5 class="item-special__title ffa">
 										From A to Z
 									</h5>
 									<p class="item-special__text">
@@ -262,9 +283,9 @@
 								</div>
 							</li>
 							<li class="special__item item-special">
-								<div class="item-special__image _icon-transparency"></div>
+								<div class="item-special__image item-special__image_4 _icon-transparency"></div>
 								<div class="item-special__content">
-									<h5 class="item-special__title title">
+									<h5 class="item-special__title ffa">
 										transparency
 									</h5>
 									<p class="item-special__text">
@@ -276,18 +297,20 @@
 								</div>
 							</li>
 						</ul>
-						<a href="#" class="special__button button button_circle">schedule a call</a>
+						<a href="#" class="special__button button button_circle" data-goto="#connection">schedule a call</a>
 					</div>
 				</section>
 				<section class="page__technologies technologies">
 					<div class="technologies__container">
-						<h2 class="technologies__title title">
-							technologies
-						</h2>
-						<p class="technologies__text">
-							Just like a restaurant uses high-quality products, so we use only the
-							best technologies in our work.
-						</p>
+						<div class="technologies__header">
+							<h2 class="technologies__title title ffa">
+								technologies
+							</h2>
+							<p class="technologies__text">
+								Just like a restaurant uses high-quality products, so we use only the
+								best technologies in our work.
+							</p>
+						</div>
 						<div class="technologies__table">
 							<div class="technologies__column">
 								<picture><source srcset="img/technologies/1kotlin.webp" type="image/webp"><img src="img/technologies/1kotlin.png" alt="kotlin"></picture>
@@ -320,7 +343,7 @@
 							</div>
 							<h2 class="roadmap__title ffa">roadmap</h2>
 							<div class="roadmap__decor">
-								<picture><source srcset="img/mobile/roadmap-decor.webp" type="image/webp"><img src="img/mobile/roadmap-decor.png" alt="roadmap"></picture>
+								<span></span>
 							</div>
 							<ul class="roadmap__list">
 								<li class="roadmap__item item-roadmap">
@@ -386,36 +409,38 @@
 						</div>
 					</div>
 				</section>
-				<section class="connection">
+				<section id="connection" class="connection">
 					<div class="connection__container">
 						<h2 class="connection__title ffa">
 							Let’s turn your great idea into a great product
 						</h2>
-						<form class="connection__form form" action="#">
-							<input class="form__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="YOUR NAME">
-							<div class="form__row">
-								<input class="form__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="E-MAIL">
-								<input class="form__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="PHONE NUMBER">
-							</div>
-							<textarea class="form__textarea">TELL US ABOUT YOUR IDEA</textarea>
-							<div class="form__footer">
-								<div class="form__checkbox checkbox">
-									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-									<label for="c_1" class="checkbox__label">
-										<span class="checkbox__text">I have read and agree to the Privacy Policy</span>
-									</label>
+						<div class="connection__wrapper">
+							<form class="connection__form form" action="#">
+								<input class="form__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="YOUR NAME">
+								<div class="form__row">
+									<input class="form__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="E-MAIL">
+									<input class="form__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="PHONE NUMBER">
 								</div>
-								<button type="submit" class="form__button button">SEND</button>
-							</div>
-						</form>
-						<p class="connection__text">
-							By the way, we are ready to adapt to any terms of work. So let's not waste time.
-						</p>
+								<textarea class="form__textarea">TELL US ABOUT YOUR IDEA</textarea>
+								<div class="form__footer">
+									<div class="form__checkbox checkbox">
+										<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<label for="c_1" class="checkbox__label">
+											<span class="checkbox__text">I have read and agree to the Privacy Policy</span>
+										</label>
+									</div>
+									<button type="submit" class="form__button button">SEND</button>
+								</div>
+							</form>
+							<p class="connection__text">
+								By the way, we are ready to adapt to any terms of work. So let's not waste time.
+							</p>
+						</div>
 					</div>
 				</section>
 			</article>
 		</main>
-		<footer class="footer">
+		<footer id="footer" class="footer">
 			<div class="footer__container">
 				<div class="footer__text ffa">
 					contact us directly:
@@ -428,10 +453,10 @@
 					</div>
 					<div class="footer__nav nav-footer">
 						<ul class="nav-footer__list">
-							<li><a href="#" class="nav-footer__link">About us</a></li>
-							<li><a href="#" class="nav-footer__link">Services</a></li>
-							<li><a href="#" class="nav-footer__link">Why us?</a></li>
-							<li><a href="#" class="nav-footer__link">Portfolio</a></li>
+							<li><a href="#" class="nav-footer__link" data-goto="#description">About us</a></li>
+							<li><a href="#" class="nav-footer__link" data-goto="#services">Services</a></li>
+							<li><a href="#" class="nav-footer__link" data-goto="#special">Why us?</a></li>
+							<li><a href="#" class="nav-footer__link" data-goto="#projects">Portfolio</a></li>
 						</ul>
 					</div>
 					<div class="footer__follow follow-footer">
@@ -462,7 +487,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20230302225749"></script>
+	<script src="js/app.min.js?_v=20230303194119"></script>
 </body>
 
 </html>
